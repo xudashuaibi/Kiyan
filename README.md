@@ -17,3 +17,12 @@
 ## 运行说明
 
 `chat-web/script.js` 里的 `API_KEY` 需要替换成自己的 Dify 密钥，`API_URL` 指向自己的 Dify 服务。
+
+### yolo-web
+- Python 3.12 虚拟环境 + ultralytics 8.4.185
+- 用 coco8 跑通 yolo11n.pt 训练（10 epoch，CPU），生成 best.pt
+- Streamlit 图片上传检测网页，加载 `../runs/detect/train/weights/best.pt`
+- 运行方式：
+  cd yolo-web
+  .\.venv\Scripts\python.exe -m streamlit run app.py
+  ![YOLO 检测效果](docs/images/yolo-demo.png)
