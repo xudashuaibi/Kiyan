@@ -18,6 +18,7 @@
 - 用 coco8 跑通 yolo11n.pt 训练，生成 best.pt
 - Streamlit 图片上传检测网页
 - 双击 `yolo-web/start.bat` 启动
+![YOLO 检测效果](docs/images/cat.jpg)
 
 ### 本地大模型部署
 
