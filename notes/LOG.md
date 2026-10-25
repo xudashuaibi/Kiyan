@@ -14,3 +14,10 @@
 - 跑通 coco8 训练，生成 best.pt
 - 写 Streamlit 检测网页，上传图片能框出物体
 - 卡点：`st.camera_input` 触发 removeChild 报错，改为单图上传 + 检测下一张
+
+## 2026-10-25 本地模型 + 桌面内嵌
+
+- 安装 Ollama，拉取 qwen2.5 模型，验证 11434 端口可访问
+- Dify 接入 Ollama 时遇到 Connection refused，原因是基础 URL 填了 localhost，改为 host.docker.internal:11434 后解决
+- chat-web 切到本地模型，断网后仍能对话，确认推理在本地
+- 用 Electron 将 chat-web 打包为桌面应用，产物在 release/ 下

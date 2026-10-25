@@ -1,0 +1,15 @@
+{
+  "name": "yolo-web",
+  "version": "1.0.0",
+  "description": "YOLO 检测桌面应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}
