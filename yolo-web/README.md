@@ -4,14 +4,14 @@ YOLO 训练脚本 + Streamlit 图片检测网页。
 
 ## 环境
 
-Python 3.12 虚拟环境，已安装 ultralytics 和 streamlit。
+Python 3.12 虚拟环境，ultralytics + streamlit。
 
 ## 训练
 
 .\.venv\Scripts\python.exe train.py
 
-## 运行检测网页
+模型输出：`../runs/detect/train/weights/best.pt`
 
-.\.venv\Scripts\python.exe -m streamlit run app.py
+## 启动
 
-模型路径：`../runs/detect/train/weights/best.pt`
+双击 `start.bat`，浏览器打开 `http://localhost:8501`。
